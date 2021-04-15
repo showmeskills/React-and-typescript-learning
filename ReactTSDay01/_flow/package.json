@@ -1,0 +1,19 @@
+{
+  "name": "_flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "@babel/preset-flow": "^7.13.13",
+    "flow-bin": "^0.148.0",
+    "flow-remove-types": "^2.148.0"
+  }
+}
