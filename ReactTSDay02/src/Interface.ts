@@ -1,5 +1,6 @@
 //接口定义
 interface List{
+
     id:number;
     name:string;
     age:number;
@@ -7,8 +8,6 @@ interface List{
 interface Result{
     data:Array<List>
 }
-
-
 
 let result:Result = {
     data:[

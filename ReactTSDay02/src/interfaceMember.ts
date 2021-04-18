@@ -26,14 +26,17 @@ const obj1: Names = {
     name:"Terrance",
     jobs:"web developer"
 }
-//混合索引使用
+//混合索引使用 类数组;键名的属性可以不一样;返回属性必须一致
 interface Name2{
     [n:string]:string;
     [x:number]:string;//报错==>[x:number]:number; 返回string 就可以返回number了
 }
 
 const obj2:Name2 = {
-    name:"Terrance",
+    name:"2222",
+    "sss":"22222",
+    1:"2222",
+    length:"10",
 }
 
 //函数类型接口
@@ -51,7 +54,7 @@ interface Lib{
 }
 
 function getLib():Lib{
-    let lib:Lib = (()=>{}) as Lib;//类型断言 不要类型断言会报错lib 中缺少version和doSomething
+    let lib:Lib = <Lib>(()=>{}) ;//类型断言 不要类型断言会报错lib 中缺少version和doSomething
     lib.version = "1111这个是混合接口";
     lib.doSomething = ()=>{};
     return lib;

@@ -74,7 +74,7 @@ const enum Month{
 
 let m:Month = Month.Jan;
 console.log(m);//0
-//console.log(Month[1]);
+//报错console.log(Month[1]);
 
 //枚举成员; 枚举成员是只读不能修改它的值;
 enum Char{
