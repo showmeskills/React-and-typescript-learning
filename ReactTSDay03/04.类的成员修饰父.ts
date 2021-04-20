@@ -21,7 +21,7 @@ namespace allCar{
          * 
          */
         public static color:string="green";
-        size:number = 1000;
+        private size:number = 1000;
         constructor(public name:string, public brand:string){
             //name和brand是实例属性
         }
